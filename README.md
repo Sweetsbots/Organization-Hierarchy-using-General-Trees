@@ -99,7 +99,7 @@ Task Points
     incorrectly formatted: 5  
     write() correctly writes the tree to a properly formatted data file: 5  
     hire() correctly inserts a new node into the tree: 5  
-    fire() correctly deletes a node from the tree, moving all employees to the parent node, or returns false if the formerTitle is - not    found or matches the root node of the tree: 5  
+    fire() correctly deletes a node from the tree, moving all employees to the parent node, or returns false if the formerTitle is  not    found or matches the root node of the tree: 5  
     The tree can store any number of employees, subject to the amount of RAM available to the program: 5  
     Your code is well organized, clearly written, and well-documented: 5  
     The asymptotic run time for each member function and the space requirements of your tree are included in the documentation:	5  
