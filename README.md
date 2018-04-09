@@ -37,8 +37,8 @@ TREENODEPTR OrgTree::rightSibling(TREENODEPTR node) – Returns a pointer to the
 
 void OrgTree::printSubTree(TREENODEPTR subTreeRoot) – print out the subtree starting at the node pointed to by subTreeRoot. This function should use indentation to show the tree structure. For example, if you called printSubTree on the tree shown above, and passed it a pointer to the "VP Sales" node, you would see the following:  
 
-  VP Sales: Mark Zuckerberg  
-  	Director of Marketing: George Lucas  
+    VP Sales: Mark Zuckerberg  
+    Director of Marketing: George Lucas  
   		Digital Media Specialist: Al Gore  
   		Head of Television and Print Advertising: George R.R. Martin  
   	Director of Public Relations: Kurt Vonnegut  
@@ -47,30 +47,30 @@ TREENODEPTR OrgTree::find(title) – returns a TREENODEPTR to the node listing t
 
 bool OrgTree::read(filename) – reads an organization tree from a file. The file will contain one tree node per line, except for lines containing only ')' characters, which mark the ends of subtrees. The organization tree illustrated above would be represented by the file shown below. If the file is found and read successfully, this function should return true. If the file is not found or the file is improperly formatted, the function should return false.
 
-  President, George Orwell  
-  VP Sales, Mark Zuckerberg  
-  Director of Marketing, George Lucas  
-  Digital Media Specialist, Al Gore  
-  )  
-  Head of Television and Print Advertising, George Martin  
-  )  
-  )  
-  Director of Public Relations, Kurt Vonnegut  
-  )  
-  )  
-  VP Operations, Bill Gates  
-  )  
-  VP Software Development, Ayn Rand  
-  MagicBag Team Leader, Wil Wheaton  
-  Software Engineer I, Donald Knuth  
-  )  
-  Software Engineer II, Marvin Minsky  
-  )  
-  )  
-  Cloud Development, Bob Ross  
-  )  
-  )  
-  )  
+    President, George Orwell  
+    VP Sales, Mark Zuckerberg  
+    Director of Marketing, George Lucas  
+    Digital Media Specialist, Al Gore  
+    )  
+    Head of Television and Print Advertising, George Martin  
+    )
+    )
+    Director of Public Relations, Kurt Vonnegut  
+    )
+    )
+    VP Operations, Bill Gates  
+    )
+    VP Software Development, Ayn Rand  
+    MagicBag Team Leader, Wil Wheaton  
+    Software Engineer I, Donald Knuth  
+    )  
+    Software Engineer II, Marvin Minsky  
+    )  
+    )  
+    Cloud Development, Bob Ross  
+    )  
+    )  
+    )  
 void OrgTree::write(filename) – write out the OrgTree to a file, using the same file format described in the read() function above.
 
 void OrgTree::hire(TREENODEPTR, newTitle, newName) – Hire an employee. The employee should be added to the tree as the last child of the node pointed to by TREENODEPTR.
@@ -88,18 +88,18 @@ Turn in and Grading Your OrgTree class should be implemented inline in the file 
 This Project is worth 50 points, distributed as follows:   
 Task Points
 
-addRoot() functions correctly and creates a valid OrgTree object: 1  
-getSize() correctly returns the size for any OrgTree object: 2  
-getRoot() returns a pointer to the root of the tree: 2  
-leftmostChild() returns a pointer to the leftmost child of a node, or TREENULLPTR for nodes with no children: 2  
-rightSibling() returns a pointer to the right sibling of a node, or TREENULLPTR for nodes with no right sibling: 2  
-printSubTree() correctly prints the appropriate subtree, with correct indentation: 3  
-find() correctly finds the node matching the given title, or returns TREENULLPTR if the title is not found in the tree: 3  
-read() correctly reads and creates a tree from a properly formatted data file, or returns false if the file is not found or
-incorrectly formatted: 5  
-write() correctly writes the tree to a properly formatted data file: 5  
-hire() correctly inserts a new node into the tree: 5  
-fire() correctly deletes a node from the tree, moving all employees to the parent node, or returns false if the formerTitle is - not found or matches the root node of the tree: 5  
-The tree can store any number of employees, subject to the amount of RAM available to the program: 5  
-Your code is well organized, clearly written, and well-documented: 5  
-The asymptotic run time for each member function and the space requirements of your tree are included in the documentation:	5  
+    addRoot() functions correctly and creates a valid OrgTree object: 1  
+    getSize() correctly returns the size for any OrgTree object: 2  
+    getRoot() returns a pointer to the root of the tree: 2  
+    leftmostChild() returns a pointer to the leftmost child of a node, or TREENULLPTR for nodes with no children: 2  
+    rightSibling() returns a pointer to the right sibling of a node, or TREENULLPTR for nodes with no right sibling: 2  
+    printSubTree() correctly prints the appropriate subtree, with correct indentation: 3  
+    find() correctly finds the node matching the given title, or returns TREENULLPTR if the title is not found in the tree: 3  
+    read() correctly reads and creates a tree from a properly formatted data file, or returns false if the file is not found or
+    incorrectly formatted: 5  
+    write() correctly writes the tree to a properly formatted data file: 5  
+    hire() correctly inserts a new node into the tree: 5  
+    fire() correctly deletes a node from the tree, moving all employees to the parent node, or returns false if the formerTitle is - not    found or matches the root node of the tree: 5  
+    The tree can store any number of employees, subject to the amount of RAM available to the program: 5  
+    Your code is well organized, clearly written, and well-documented: 5  
+    The asymptotic run time for each member function and the space requirements of your tree are included in the documentation:	5  
